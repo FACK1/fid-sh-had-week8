@@ -1,4 +1,4 @@
-# fid-sh-had-week8
+# Tutorials
 
 Our App:
 - Allows user to add good programming languages tutorials.
