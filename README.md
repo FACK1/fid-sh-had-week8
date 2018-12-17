@@ -1,4 +1,4 @@
-# Tutorials
+# TutorialsApp
 
 Our App:
 - Allows user to add good programming languages tutorials.
