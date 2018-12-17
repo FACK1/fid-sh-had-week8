@@ -9,7 +9,6 @@ Our App:
   - public 
     - style.css 
     - img
-      
   - src 
     - server.js
     - app.js
