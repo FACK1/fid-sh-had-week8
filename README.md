@@ -45,3 +45,5 @@ Our App:
   
   # Website Design 
   ![](https://scontent.fjrs2-1.fna.fbcdn.net/v/t1.15752-9/48424794_131512214408673_4414917314441379840_n.jpg?_nc_cat=102&_nc_ht=scontent.fjrs2-1.fna&oh=58b9c0f01f10738e7d5f38b445915c61&oe=5CD7C356)
+  # Database Schema
+  ![screenshot from 2018-12-17 15-08-07](https://user-images.githubusercontent.com/37650536/50089165-a41e9500-01ca-11e9-9df1-e3bd86baa43f.png)
