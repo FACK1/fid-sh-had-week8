@@ -1,5 +1,10 @@
 # fid-sh-had-week8
 
+Our App:
+- Allows user to add good programming languages tutorials.
+- Allows user to search about programming languages with included links to thier tutorials.
+- Needs login befor adding any tutorial to the website.
+
 # Files Structure:
   - public 
     - style.css 
