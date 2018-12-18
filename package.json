@@ -4,7 +4,11 @@
   "description": "Our App: - Allows user to add good programming languages tutorials. - Allows user to search about programming languages with included links to thier tutorials. - Needs login befor adding any tutorial to the website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js -e js,hbs",
+    "lint": "./node_modules/.bin/eslint ./src/server/**/*.js",
+    "lint-fix": "./node_modules/.bin/eslint --fix ./src/**/*.js",
+    "start":" node ./src/server.js"
   },
   "repository": {
     "type": "git",
