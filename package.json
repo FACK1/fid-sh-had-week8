@@ -1,0 +1,23 @@
+{
+  "name": "fid-sh-had-week8",
+  "version": "1.0.0",
+  "description": "Our App: - Allows user to add good programming languages tutorials. - Allows user to search about programming languages with included links to thier tutorials. - Needs login befor adding any tutorial to the website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACK1/fid-sh-had-week8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACK1/fid-sh-had-week8/issues"
+  },
+  "homepage": "https://github.com/FACK1/fid-sh-had-week8#readme",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "pg": "^7.7.1"
+  }
+}
