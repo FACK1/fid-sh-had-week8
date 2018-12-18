@@ -1,0 +1,10 @@
+{{>header}}
+{{#if result}}
+<ul>
+{{#each result}}
+<li>User name: {{name}}, <a href={{link}}>Tutorial Link</a></li>
+{{/each}}
+</ul>
+{{else}}
+<p>No results found</p>
+{{/if}}
