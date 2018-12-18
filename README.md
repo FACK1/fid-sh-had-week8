@@ -29,7 +29,8 @@ Our App:
       - signup.hbs
       - login.hbs
       - errors.hbs
-      - profile.hbs  
+      - profile.hbs
+      - search.hbs
     - database
       - db_build.sql
       - db_build.js
