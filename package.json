@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/server.js -e js,hbs",
-    "lint": "./node_modules/.bin/eslint ./src/server/**/*.js",
+    "lint": "./node_modules/.bin/eslint ./src/**/*.js",
     "lint-fix": "./node_modules/.bin/eslint --fix ./src/**/*.js",
     "start": " node ./src/server.js"
   },
@@ -30,6 +30,10 @@
   },
   "devDependencies": {
     "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "nodemon": "^1.18.9",
     "tap-spec": "^5.0.0"
   }
