@@ -1,3 +1,139 @@
 h1{
-  color: pink;
+  color: #9B4737;
+  text-shadow: 2px 2px #B48854;
+  transform: rotate(-20deg);
+  margin: 0;
+  padding-left: 5%;
+}
+.background{
+  margin: 0;
+  padding: 0;
+  background-image: url('10.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ background-position: center;
+ height: 250px;
+}
+
+nav{
+  background-color: #363742;
+  height: 30px;
+}
+
+h2{
+  color: #9B4737;
+  background-color: #B48854;
+  text-align: center;
+}
+
+.searchBtn{
+  margin-left: -30px;
+  background-color: #B48854;
+  width: 40px;
+  height: 36px;
+  font-size: 16px;
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+  color: #9096A1;
+}
+
+.searchInput{
+  border-radius: 5px;
+padding-right: 20px;
+height: 30px;
+font-size: 16px;
+border-color: #DBDBDA;
+}
+
+.inputButtons{
+  width: 70px;
+  margin-right: 20px;
+  font-family: Charm;
+  font-weight: bold;
+  font-size: 18px;
+  color:  #B48854;
+}
+
+.logs{
+  display: flex;
+  justify-content: center;
+}
+
+.members{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html{
+  font-family: Charm;
+}
+p{
+  font-size: 18px;
+}
+
+.searchContainer{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.profileHeader{
+  z-index: 1;
+  margin-top: -10px;
+  margin-bottom: 0;
+  color: #9B4737;
+  padding-top: 6px;
+}
+
+.profileTop{
+  background-color: #B48854;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logoutBtn{
+  background-color: #B48854;
+  border: none;
+  color: #9B4737;
+  width: 60px;
+  margin-right: 20px;
+  font-family: Charm;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.inputs{
+  margin-top: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.addForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tutInputs{
+  display: flex;
+  flex-direction: column;
+}
+#addBtn{
+  margin-top: 20px;
 }
