@@ -4,9 +4,12 @@ const home = require('./home');
 const error=require('./error');
 const signup = require('./signup');
 const login = require('./login');
-const logout = require('./logout');
-const router = express.Router();
 
+const addTutorials = require('./addtutorials');
+
+const logout = require('./logout');
+
+const router = express.Router();
 
 router.get('/', home.get);
 router.post('/search', search.post);
@@ -17,10 +20,13 @@ router.post('/signup', signup.post);
 router.get('/login', login.get);
 router.post('/login', login.post);
 
+router.post('/addtutorial', addTutorials.post);
+
 router.get('/logout', logout.get)
+
 
 router.use(error.pageNotFound);
 router.use(error.serverError);
 
 
-module.exports = router;
+module.exports = router
