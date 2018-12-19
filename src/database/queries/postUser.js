@@ -1,14 +1,11 @@
 const db_connection = require('../db_connection.js');
 
-const checkUser = (name, email, password) => {
+const checkUser = (email) => {
 
 	return new Promise((resolve, reject) => {
 		db_connection.query(`select email from users where email = $1`, [email], (error, result) => {
 			try {
-				resolve({
-					params: [name, email, password],
-					userExist: result.rows
-				})
+				resolve(result.rows)
 			} catch (e) {
 				reject(error);
 			}
@@ -17,12 +14,12 @@ const checkUser = (name, email, password) => {
 }
 
 
-const addUser = obj => {
+const addUser = (result, name, email, password) => {
 
 	return new Promise((resolve, reject) => {
 
-		if (obj.userExist.length <= 0) {
-			db_connection.query('INSERT INTO users (name, email,password) values ($1, $2, $3)', obj.params, (error, result) => {
+		if (result.length <= 0) {
+			db_connection.query('INSERT INTO users (name, email,password) values ($1, $2, $3)', [name, email, password], (error, result) => {
 				if (error) {
 					reject(error)
 				}
