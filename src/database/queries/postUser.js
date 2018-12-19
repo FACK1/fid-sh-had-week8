@@ -2,7 +2,7 @@ const db_connection = require('../db_connection.js');
 
 const checkUser = (email) => {
 	return new Promise((resolve, reject) => {
-		db_connection.query(`select id, name, email, password from users where email = $1`, [email], (error, result) => {
+		db_connection.query(`select * from users where email = $1`, [email], (error, result) => {
 			try {
 				resolve(result.rows)
 			} catch (e) {
