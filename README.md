@@ -62,10 +62,12 @@ This app allows visitors to search for programming languages tutorials, also add
 2- Open your command line.
 
 3- Put in terminal : **npm install**.
+ 
+4- Go the root directory and create a file **"config.env"**
 
-4- Then put in terminal : **npm run dev** to run the server.
+7- Then put in terminal : **npm run dev** to run the server.
 
-5- Open your browser and put in terminal: **localhost:3001**.
+8- Open your browser and put in terminal: **localhost:3001**.
 
 
 
