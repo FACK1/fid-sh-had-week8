@@ -3,9 +3,12 @@ const path=require("path");
 const exphbs = require('express-handlebars');
 const compression = require('compression');
 const router = require('./controllers');
+const cookieParser = require('cookie-parser');
+
 const app=express();
 
 app.use(compression());
+app.use(cookieParser());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
