@@ -12,8 +12,6 @@ const addTutorials = require('./addtutorials');
 
 const logout = require('./logout');
 
-const router = express.Router();
-
 router.get('/', home.get);
 router.post('/search', search.post);
 
