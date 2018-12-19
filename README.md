@@ -1,5 +1,5 @@
 # TutorialsApp
-App allows all vistors to search for programming languages tutorials, also adding good tutorials links by logging into their accounts.
+This app allows visitors to search for programming languages tutorials, also adding tutorials links they think it usful by having an acoount on the site.
 
 # User journey :
   - As a user I want to create account.
@@ -9,7 +9,7 @@ App allows all vistors to search for programming languages tutorials, also addin
   - As a guest/user I want to search for tutorials for specific language.
  
  
-# Website Link:[Tutorials]
+# Website Link:[Tutorials](https://languagetutorialsapp.herokuapp.com/)
 
 
 # Files Structure:
@@ -62,10 +62,18 @@ App allows all vistors to search for programming languages tutorials, also addin
 2- Open your command line.
 
 3- Put in terminal : **npm install**.
+ 
+4- Then create database in terminal `CREATE DATABASE testapp ;` .
 
-4- Then put in terminal : **npm run dev** to run the server.
+5- Then  create user `CREATE USER had with password 'none';` .
 
-5- Open your browser and put in terminal: **localhost:3001**.
+6- Then  put command `GRANT ALL PRIVILEGES ON DATABASE testapp to had;` will grant our had  with all priviliges and rights to use and access the database.
+ 
+7- Go the root directory and create a file **"config.env"**, and put in it `DATABASE_URL=postgres://had:none@localhost:5432/testapp` and `SECRET=skjdahshadhaldakhdalkdad`.
+
+8- Then put in terminal : **npm run dev** to run the server.
+
+9- Open your browser and put in terminal: **localhost:3001**.
 
 
 
