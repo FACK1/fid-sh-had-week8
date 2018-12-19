@@ -63,7 +63,13 @@ This app allows visitors to search for programming languages tutorials, also add
 
 3- Put in terminal : **npm install**.
  
-4- Go the root directory and create a file **"config.env"**
+4- Go the root directory and create a file **"config.env"**.
+
+5- Then create database in terminal  **CREATE DATABASE testapp ; ** .
+
+6- Then  create user **CREATE USER had with password 'none';** .
+
+7- Then  command will grant our had  with all priviliges and rights to use and access the database.
 
 7- Then put in terminal : **npm run dev** to run the server.
 
