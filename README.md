@@ -1,5 +1,5 @@
 # TutorialsApp
-App allows all vistors to search for programming languages tutorials, also adding good tutorials links by logging into their accounts.
+This app allows visitors to search for programming languages tutorials, also adding tutorials links they think it usful by having an acoount on the site.
 
 # User journey :
   - As a user I want to create account.
