@@ -7,6 +7,8 @@ const login = require('./login');
 const addTutorials = require('./addtutorials');
 const router = express.Router();
 
+router.get('/', home.get);
+router.post('/search', search.post);
 
 router.get('/signup', signup.get);
 router.post('/signup', signup.post);
