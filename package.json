@@ -4,7 +4,7 @@
   "description": "Our App: - Allows user to add good programming languages tutorials. - Allows user to search about programming languages with included links to thier tutorials. - Needs login befor adding any tutorial to the website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape ./src/test.js | tap-spec ",
     "dev": "nodemon ./src/server.js -e js,hbs",
     "lint": "./node_modules/.bin/eslint ./src/**/*.js",
     "lint-fix": "./node_modules/.bin/eslint --fix ./src/**/*.js",
@@ -29,6 +29,7 @@
     "express-handlebars": "^3.0.0",
     "jsonwebtoken": "^8.4.0",
     "pg": "^7.7.1",
+    "supertest": "^3.3.0",
     "tape": "^4.9.1"
   },
   "devDependencies": {
