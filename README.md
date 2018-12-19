@@ -71,9 +71,11 @@ This app allows visitors to search for programming languages tutorials, also add
  
 7- Go the root directory and create a file **"config.env"**, and put in it `DATABASE_URL=postgres://had:none@localhost:5432/testapp` and `SECRET=skjdahshadhaldakhdalkdad`.
 
-8- Then put in terminal : **npm run dev** to run the server.
+8- Then put in terminal : **node src/database/db_build.js** to build the database.
 
-9- Open your browser and put in terminal: **localhost:3001**.
+9- Then put in terminal : **npm run dev** to run the server.
+
+10- Open your browser and put in terminal: **localhost:3001**.
 
 
 
