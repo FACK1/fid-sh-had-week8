@@ -4,6 +4,7 @@ const home = require('./home');
 const error=require('./error');
 const signup = require('./signup');
 const login = require('./login');
+const logout = require('./logout');
 const router = express.Router();
 
 
@@ -15,6 +16,8 @@ router.post('/signup', signup.post);
 
 router.get('/login', login.get);
 router.post('/login', login.post);
+
+router.get('/logout', logout.get)
 
 router.use(error.pageNotFound);
 router.use(error.serverError);
