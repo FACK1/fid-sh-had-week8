@@ -50,7 +50,7 @@ Our App:
 ![screenshot from 2018-12-19 10-38-15](https://user-images.githubusercontent.com/37650536/50208618-3fcd1400-0337-11e9-807a-3338c6a0b483.png)
  ### How to run our site on your machine?
 
-1- Clone this repo (git@github.com:FACK1/fid-sh-had-week8.git)
+1- Clone this repo (https://github.com/FACK1/fid-sh-had-week8)
 
 2- Open your command line.
 
