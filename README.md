@@ -1,14 +1,16 @@
 # TutorialsApp
+This app allows visitors to search for programming languages tutorials, also adding tutorials links they think it usful by having an acoount on the site.
 
-Our App:
-- Allows user to add good programming languages tutorials.
-- Allows user to search about programming languages with included links to thier tutorials.
-- Needs login befor adding any tutorial to the website.
+# User journey :
+  - As a user I want to create account.
+  - As a user I want to login to my account.
+  - As a user I want to logout from my account.
+  - As a user I want to add tutorial link to a specific language.
+  - As a guest/user I want to search for tutorials for specific language.
+ 
+ 
+# Website Link:[Tutorials](https://languagetutorialsapp.herokuapp.com/)
 
-### User journey:
- - 
-### Site Link in Heroku :
-[Tutorials]()
 
 # Files Structure:
   - public 
