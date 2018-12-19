@@ -1,11 +1,11 @@
 const express = require('express');
-const search = require('./search');
-const home = require('./home');
+// const search = require('./search');
+// const home = require('./home');
+const addTutorials = require('./addtutorials');
 const router = express.Router();
 
 
-router.get('/', home.get);
-router.post('/search', search.post);
+router.post('/addtutorials', addTutorials.post);
 
 
-module.exports = router;
+module.exports = router
