@@ -63,17 +63,17 @@ This app allows visitors to search for programming languages tutorials, also add
 
 3- Put in terminal : **npm install**.
  
-4- Go the root directory and create a file **"config.env"**.
+4- Then create database in terminal `CREATE DATABASE testapp ;` .
 
-5- Then create database in terminal  **CREATE DATABASE testapp ; ** .
+5- Then  create user `CREATE USER had with password 'none';` .
 
-6- Then  create user **CREATE USER had with password 'none';** .
+6- Then  put command `GRANT ALL PRIVILEGES ON DATABASE testapp to had;` will grant our had  with all priviliges and rights to use and access the database.
+ 
+7- Go the root directory and create a file **"config.env"**, and put in it **DATABASE_URL=postgres://had:none@localhost:5432/testapp** and **SECRET=skjdahshadhaldakhdalkdad** .
 
-7- Then  command will grant our had  with all priviliges and rights to use and access the database.
+8- Then put in terminal : **npm run dev** to run the server.
 
-7- Then put in terminal : **npm run dev** to run the server.
-
-8- Open your browser and put in terminal: **localhost:3001**.
+9- Open your browser and put in terminal: **localhost:3001**.
 
 
 
