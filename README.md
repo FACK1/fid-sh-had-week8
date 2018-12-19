@@ -69,7 +69,7 @@ This app allows visitors to search for programming languages tutorials, also add
 
 6- Then  put command `GRANT ALL PRIVILEGES ON DATABASE testapp to had;` will grant our had  with all priviliges and rights to use and access the database.
  
-7- Go the root directory and create a file **"config.env"**, and put in it **DATABASE_URL=postgres://had:none@localhost:5432/testapp** and **SECRET=skjdahshadhaldakhdalkdad** .
+7- Go the root directory and create a file **"config.env"**, and put in it `DATABASE_URL=postgres://had:none@localhost:5432/testapp` and `SECRET=skjdahshadhaldakhdalkdad`.
 
 8- Then put in terminal : **npm run dev** to run the server.
 
