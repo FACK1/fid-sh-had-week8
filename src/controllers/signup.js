@@ -12,17 +12,18 @@ exports.post = (req, res) => {
 	const password = req.body.password;
 
 	bcrypt.genSalt(10, function (err, salt) {
-		bcrypt.hash(password, salt, function (err, hash) {
-			if (err) {
-				return error //handle to server error
+		bcrypt.hash(password, salt, function (error, hash) {
+			if (error) {
+				 throw new Error(error)
+         return
 			} else {
 
-				postUser.checkUser(name, email, hash)
-					.then(postUser.addUser)
+				postUser.checkUser(email)
+					.then(result => postUser.addUser(result, name, email, hash))
 					.then(message => {
 						res.render('signup', {message});
 					})
-					.catch(console.log)
+					.catch(err => { throw new Error(err) })
 			}
 		})
 	})
