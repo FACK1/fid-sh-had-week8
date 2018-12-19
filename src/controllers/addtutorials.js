@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 
 exports.post = (req, res) => {
-  
+
 const { language_name,link} = req.body;
 const token = req.cookie;
 console.log(token);
