@@ -17,8 +17,10 @@ exports.post = (req, res) => {
 			} else {
 				postUser.checkUser(email)
 					.then(result => {
-            if(result.length > 0)
+            if(result.length > 0){
             res.render('signup', {message: 'already exist'});
+            return
+          }
               postUser.addUser(name, email, hash)
               .then(message => {
                 res.render('signup', {message});
