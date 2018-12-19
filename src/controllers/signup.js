@@ -7,9 +7,7 @@ exports.get = (req, res) => {
 
 exports.post = (req, res) => {
 
-	const name = req.body.name;
-	const email = req.body.email;
-	const password = req.body.password;
+	const { name, email, password } = req.body;
 
 	bcrypt.genSalt(10, function (err, salt) {
 		bcrypt.hash(password, salt, function (error, hash) {
