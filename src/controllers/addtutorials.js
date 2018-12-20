@@ -6,7 +6,6 @@ const {	SECRET } = process.env
 
 exports.post = (req, res) => {
 
-
 		if (req.headers.cookie) {
 			const { language_name,	link } = req.body;
 			const token = cookie.parse(req.headers.cookie).logged_in;
