@@ -82,6 +82,8 @@ p{
 
 ul{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-size: 18px;
 }
@@ -136,4 +138,9 @@ ul{
 }
 #addBtn{
   margin-top: 20px;
+}
+
+.no-result{
+  display: flex;
+  justify-content: center;
 }
