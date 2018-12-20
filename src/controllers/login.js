@@ -34,7 +34,7 @@ exports.post = (req, res) => {
             const { id, name, email} = result[0];
             const token = jwt.sign({id, email}, SECRET);
 
-            res.cookie('logged_in', token, {maxAge : 9999}).render('profile',
+            res.cookie('logged_in', token, {maxAge : 999999999}).render('profile',
              {name: name});
           });
 }
