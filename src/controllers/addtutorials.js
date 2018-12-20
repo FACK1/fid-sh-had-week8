@@ -19,7 +19,7 @@ exports.post = (req, res) => {
 
 					const user_id = decoded.id;
 
-					addTutorials(language_name, link, user_id)
+					addTutorials(language_name.toUpperCase(), link, user_id)
 						.then(
 							res.render("profile", {message: "added"})
 								).catch((error) => {
