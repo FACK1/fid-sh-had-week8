@@ -1,4 +1,23 @@
 {{>header}}
+<div class="members">
+<p>To add a tutorial and share it with others,<br> you have to log in first..</p>
+<div class="logs">
+<form action="/login">
+   <input class="inputButtons" type="submit" name="" value="Log in">
+</form>
+<form action="/signup">
+   <input class="inputButtons" type="submit" name="" value="Sign up">
+</form>
+</div>
+</div>
+<h2>Search</h2>
+<form action="/search" method="POST">
+<div class="searchContainer">
+<input class="searchInput" type="text" name="language" value="" placeholder="Type here..">
+<button type="submit" class="searchBtn"><i class="fa fa-search"></i></button>
+</div>
+</form>
+
 {{#if result}}
 <ul>
 {{#each result}}
