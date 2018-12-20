@@ -1,11 +1,17 @@
-<form action="/">
-<input type="submit" name="" value="Home">
-</form>
-
+{{>header}}
+<div class="outerContainer">
 <form action="/login" method="POST">
-  <input type="text" name="email" value="" placeholder="Type your email..">
-  <input type="password" name="password" value="" placeholder="Type a password..">
-   <input type="submit" name="" value="Log in">
+  <div class="inputsContainer">
+  <input class="inputs" type="text" name="email" value="" placeholder="Type your email..">
+  <input class="inputs" type="password" name="password" value="" placeholder="Type a password..">
+</div>
+<div class="home-login">
+     <input class="inputButtons" type="submit" name="" value="Log in">
 </form>
 
+<form action="/">
+<input class="inputButtons" type="submit" name="" value="Home">
+</form>
+<div>
 <p>{{message}}</p>
+</div>
