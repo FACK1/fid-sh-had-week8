@@ -6,7 +6,7 @@ exports.post = (req, res) => {
 const languageSearch = (req.body.language).toUpperCase();
   getTutorials(languageSearch, (error, result) => {
     if (error) {
-      console.log(error);
+      throw new Error(error)
       return
     }
     res.render('search', {result});
